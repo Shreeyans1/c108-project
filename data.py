@@ -5,7 +5,7 @@ import pandas as pd
 import csv
 
 df = pd.read_csv("data.csv")
-df1 = df["Height(Inches)"].tolist()
+df1 = df["Avg Rating"].tolist()
 
-fig = ff.create_distplot([df1],["height"],show_hist = True)
+fig = ff.create_distplot([df1],["Avg Rating"],show_hist = True)
 fig.show()
